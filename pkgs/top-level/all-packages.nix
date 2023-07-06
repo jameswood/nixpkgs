@@ -32695,7 +32695,11 @@ with pkgs;
 
   ledger2beancount = callPackage ../tools/text/ledger2beancount { };
 
-  lightburn = libsForQt5.callPackage ../applications/graphics/lightburn { };
+  lightburn-1_2_01 = libsForQt5.callPackage ../applications/graphics/lightburn/1_2_01 { };
+
+  lightburn-1_4_00 = libsForQt5.callPackage ../applications/graphics/lightburn/1_4_00 { };
+
+  lightburn = lightburn-1_4_00;
 
   lighthouse-steamvr = callPackage ../tools/misc/lighthouse-steamvr { };
 
